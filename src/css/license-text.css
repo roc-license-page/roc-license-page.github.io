@@ -1,0 +1,59 @@
+.rocMajorTitle, 
+.godotTitle {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.rocMinorTitle {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.rocLicenseContent, 
+.godotLicenseContent {
+    font-size: 20px;
+}
+
+.rocParentList {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-left: 25px;
+    font-weight: bold;
+}
+
+.rocParentList li {
+    margin-top: 10px;
+}
+
+.rocChildList {
+    padding-left: 25px;
+    font-weight: 400;
+    list-style-type: disc;
+}
+
+.rocChildList ul {
+    list-style-type: circle;
+}
+
+.rocChildList ul ul {
+    list-style-type: square;
+}
+
+.rocChildList li {
+    margin-top: 5px;
+}
+
+.rocSpaceAbove, 
+.godotSpaceAbove{
+    margin-top: 20px;
+}
+
+.godotList {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.godotList li {
+    margin-top: 5px;
+}

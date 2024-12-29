@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title data-lang data-en="License" data-de="Lizenz"></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="The Rise Of Coffee license text page">
+        <link rel="icon" href="src/images/logo-32.png" type="image/png">
+
+        <link rel="stylesheet" href="src/css/loading-screen.css">
+        <link rel="stylesheet" href="src/css/main.css">
+        <link rel="stylesheet" href="src/css/license-text.css">
+
+        <script async src="src/js/license-text.js"></script>
+        <script async src="src/js/loading-screen.js"></script>
+        <script defer src="src/js/main.js"></script>
+    </head>
+    <body id="body">
+        <header>
+            <div class="loadingScreen active" id="loadingScreen">
+                <h1 id="loadingText">Loading</h1>
+                <p>Please wait until the site has finished loading.</p>
+                <p id="messageBox"></p>
+            </div>
+            <div class="messageContainer" id="messageContainer"></div>
+            <div class="navBar active" id="navBar">
+                <div class="title" data-lang data-en="License" data-de="Lizenz"></div>
+                <div class="content">
+                    <div class="button" id="darkmodeButton" data-lang data-en="Toggle darkmode" data-de="Darkmode umschalten"></div>
+                    <div class="button" id="fullscreenButton" data-lang data-en="Toggle full screen" data-de="Vollbild umschalten"></div>
+                    <div class="button" id="changelogButton" data-lang data-en="Open changelog" data-de="Changelog öffnen"></div>
+                    <div class="button" id="settingsButton" data-lang data-en="Open settings" data-de="Einstellungen öffnen"></div>
+                    <div class="button closePage" id="closePageButton" data-lang data-en="Close page" data-de="Seite schließen"></div>
+                </div>
+            </div>
+            <div class="navBar simplified" id="simplifiedNavBar">
+                <div class="title" data-lang data-en="License" data-de="Lizenz"></div>
+                <div class="content">
+                    <span data-lang data-en="Simplified page mode is currently enabled. To return to regular page mode, please click " data-de="Der vereinfachte Seitenmodus ist derzeit aktiviert. Um zum regulären Seitenmodus zurückzukehren, klicken Sie bitte "></span><span class="button" data-lang data-en="here" data-de="hier"></span>.
+                </div>
+            </div>
+        </header>
+        <main id="main">
+            <div class="popup update license" id="licenseUpdatePopup">
+                <div class="header">
+                    <div class="title" data-lang data-en="License text updated" data-de="Lizenztext aktualisiert"></div>
+                    <div class="closeButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                            <line x1="2" y1="2" x2="30" y2="30" stroke-width="4" stroke-linecap="round"/>
+                            <line x1="30" y1="2" x2="2" y2="30" stroke-width="4" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="text" data-lang data-en="Since your last visit, the license text has been updated. To learn more about the changes, please open the changelog." data-de="Seit ihrem letzten Besuch wurde der Lizenztext aktualisiert. Um mehr über die Änderungen zu erfahren, öffnen Sie bitte den Changelog."></div>
+                    <hr>
+                    <div class="versionDisplay">
+                        <span data-lang data-en="Current license text version: " data-de="Aktuelle Lizenztextversion: "></span><span class="currentLicense"></span>
+                        <br>
+                        <span data-lang data-en="Last version seen: " data-de="Letzte gesehene Version: "></span><span class="lastLicense"></span>
+                    </div>
+                    <hr>
+                    <div class="buttons">
+                        <div class="openChangelog roundableButton rounded" data-lang data-en="Open changelog" data-de="Changelog öffnen"></div>
+                        <div class="closePopup roundableButton rounded" data-lang data-en="Close popup" data-de="Popup schließen"></div>
+                    </div>
+                    <div class="note" data-lang data-en="Note: This popup can be disabled in settings." data-de="Hinweis: Dieses popup kann in den Einstellungen deaktiviert werden."></div>
+                </div>
+            </div>
+            <div class="popup update html" id="htmlUpdatePopup">
+                <div class="header">
+                    <div class="title" data-lang data-en="HTML updated" data-de="HTML aktualisiert"></div>
+                    <div class="closeButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                            <line x1="2" y1="2" x2="30" y2="30" stroke-width="4" stroke-linecap="round"/>
+                            <line x1="30" y1="2" x2="2" y2="30" stroke-width="4" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="text" data-lang data-en="Since your last visit, the page's HTML has been updated. To learn more about the changes, please open the changelog." data-de="Seit ihrem letzten Besuch wurde das HTML der Seite aktualisiert. Um mehr über die Änderungen zu erfahren, öffnen Sie bitte den Changelog."></div>
+                    <hr>
+                    <div class="versionDisplay">
+                        <span data-lang data-en="Current HTML version: " data-de="Aktuelle HTML-Version: "></span><span class="currenthtml"></span>
+                        <br>
+                        <span data-lang data-en="Last version seen: " data-de="Letzte gesehene Version: "></span><span class="lasthtml"></span>
+                    </div>
+                    <hr>
+                    <div class="buttons">
+                        <div class="openChangelog roundableButton rounded" data-lang data-en="Open changelog" data-de="Changelog öffnen"></div>
+                        <div class="closePopup roundableButton rounded" data-lang data-en="Close popup" data-de="Popup schließen"></div>
+                    </div>
+                    <div class="note" data-lang data-en="Note: This popup can be disabled in settings." data-de="Hinweis: Dieses popup kann in den Einstellungen deaktiviert werden."></div>
+                </div>
+            </div>
+            <div class="popup update combo" id="comboUpdatePopup">
+                <div class="header">
+                    <div class="title" data-lang data-en="License text & HTML updated" data-de="Lizenztext & HTML aktualisiert"></div>
+                    <div class="closeButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                            <line x1="2" y1="2" x2="30" y2="30" stroke-width="4" stroke-linecap="round"/>
+                            <line x1="30" y1="2" x2="2" y2="30" stroke-width="4" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="text" data-lang data-en="Since your last visit, both the license text and the page's HTML have been updated. To learn more about the changes, please open the changelog." data-de="Seit ihrem letzten Besuch wurde der Lizenztext und das HTML der Seite aktualisiert. Um mehr über die Änderungen zu erfahren, öffnen Sie bitte den Changelog."></div>
+                    <hr>
+                    <div class="versionDisplay">
+                        <span data-lang data-en="Current HTML version: " data-de="Aktuelle HTML-Version: "></span><span class="currenthtml"></span>
+                        <br>
+                        <span data-lang data-en="Last version seen: " data-de="Letzte gesehene Version: "></span><span class="lasthtml"></span>
+                    </div>
+                    <hr>
+                    <div class="versionDisplay">
+                        <span data-lang data-en="Current license text version: " data-de="Aktuelle Lizenztextversion: "></span><span class="currentLicense"></span>
+                        <br>
+                        <span data-lang data-en="Last version seen: " data-de="Letzte gesehene Version: "></span><span class="lastLicense"></span>
+                    </div>
+                    <hr>
+                    <div class="buttons">
+                        <div class="openChangelog roundableButton rounded" data-lang data-en="Open changelog" data-de="Changelog öffnen"></div>
+                        <div class="closePopup roundableButton rounded" data-lang data-en="Close popup" data-de="Popup schließen"></div>
+                    </div>
+                    <div class="note" data-lang data-en="Note: This popup can be disabled in settings." data-de="Hinweis: Dieses popup kann in den Einstellungen deaktiviert werden."></div>
+                </div>
+            </div>
+            <div class="popup changelog" id="changelogPopup">
+                <div class="header">
+                    <div class="title">Changelog</div>
+                    <div class="closeButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                            <line x1="2" y1="2" x2="30" y2="30" stroke-width="4" stroke-linecap="round"/>
+                            <line x1="30" y1="2" x2="2" y2="30" stroke-width="4" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="note">
+                        <span data-lang data-en="Note: Removed/reverted changes are " data-de="Hinweis: Entfernte/rückgängig gemachte Änderungen sind "></span><span class="crossedOut" data-lang data-en="crossed out" data-de="durchgestrichen"></span>.
+                    </div>
+                    <div class="selector roundableButton rounded">
+                        <div class="element roundableButton rounded active" data-lang data-en="Changes to HTML" data-de="Änderungen des HTML"></div>
+                        <div class="element roundableButton rounded" data-lang data-en="Changes to license text" data-de="Änderungen des Lizenztexts"></div>
+                    </div>
+                    <div class="changes active" id="htmlChanges">
+                        <div class="segment active" data-html-segment="1">
+                            <div class="change">
+                                <div class="title">
+                                    Version 4.2.1
+                                    <object data="src/icons/translation-available.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="note">
+                                    Patch, XX/01/2025
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <span class="bold" data-lang-object-id="changelog.changes"></span>
+                                            <ul>
+                                                <li data-lang data-en="Upgraded changelog notes for HTML versions 2.5.0 to 2.5.5" data-de="Verbesserung der Änderungshinweise für HTML-Versionen 2.5.0 bis 2.5.5"></li>
+                                                <li data-lang data-en="Switched from onclick to addEventListener to detect user interaction in order to maintain the seperation between structure (HTML) and logic (TypeScript) of the site" data-de="Es wurde von onclick zu addEventListener zum erkennen von Nutzeriniteraktion zu erkennen gewechselt, um Struktur (HTML) von Logik (TypeScript) zu trennen"></li>
+                                                <li data-lang data-en="Replaced some objects with arrays for simplification" data-de="Einige Objects wurden zur Vereinfachung durch Arrays ersetzt"></li>
+                                                <li data-lang data-en="Partially changed the internal folder structure" data-de="Teilweise Änderung der internen Ordnerstruktur"></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">
+                                    Version 4.2.0
+                                    <object data="src/icons/translation-available.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="note">
+                                    <span data-lang-object-id="changelog.minor-update"></span>, XX/01/2025
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <span class="bold" data-lang data-en="Switched from JS to TS: " data-de="Von TS auf JS umgestellt: "></span><span data-lang data-en="Replaced JavaScript in favor of TypeScript. As TS compiles to JS, this doesn't make any difference to the user. However, it makes development much easier by adding static typing" data-de="JavaScript wurde durch TypeScript ersetzt. Weil TS nach JS kompiliert, macht dies keinen Unterschied für den Nutzer, jedoch macht es die Entwicklung durch static typing deutlich einfacher"></span>
+                                        </li>
+                                        <li>
+                                            <span class="bold" data-lang-object-id="changelog.new-features"></span>
+                                            <ul>
+                                                <li>
+                                                    <span class="bold" data-lang data-en="Scroll indicator: " data-de="Scrollanzeige: "></span>
+                                                    <span data-lang data-en="Added a scroll indicator in the bottom right corner showing how much you have scrolled on the page" data-de="In der unteren rechten Ecke wurde eine Scrollanzeige hinzugefügt, die zeigt, wie viel auf der Seite gescrollt wurde"></span>
+                                                </li>
+                                                <li>
+                                                    <span class="bold" data-lang data-en="Font selection: " data-de="Schriftartenauswahl: "></span>
+                                                    <span data-lang data-en="Added fonts you can choose from (.woff2 files included in website folders). Current fonts:" data-de="Schriftarten zum auswählen wurden hunzugefügt (.woff2 Dateien in den Website-Ordnern enthalten). Aktuelle Schriftarten:"></span>
+                                                    <ul>
+                                                        <li class="poppins">Poppins</li>
+                                                        <li class="roboto">Roboto (standard)</li>
+                                                        <li class="oswald">Oswald</li>
+                                                        <li class="robotoslab">Roboto Slab</li>
+                                                        <li class="lora">Lora</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="bold" data-lang-object-id="changelog.new-settings"></span>
+                                                    <ul>
+                                                        <li data-lang data-en="Scroll indicator toggle" data-de="Scrollanzeigenschalter"></li>
+                                                        <li data-lang data-en="Font selector" data-de="Schriftartenwähler"></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="bold">Keybind info: </span>
+                                                    <span data-lang data-en="If you spam 'f' or 'esc' key with disabled keybinds, you will be reminded that keybinds are disabled" data-de="Wenn Keybinds ausgeschaltet sind und Tasten 'f' oder 'esc' gespammt werden, wird man erinnert, dass keybinds ausgeschaltet sind."></span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="bold" data-lang data-en="Bug fixes, improvements & optimisation: " data-de="Fehlerbehebung, Verbesserungen & Optimierung: "></span>
+                                            <span data-lang data-en="Various minor adjustments for better UX" data-de="Diverse kleinere Anpassungen zur Verbesserung der UX"></span>
+                                        </li>
+                                        <li>
+                                            <span class="bold" data-lang-object-id="changelog.general-info"></span>
+                                            <span data-lang data-en="Despite our best efforts, your settings are reset when updating to the new file structure. We apologize for any inconvenience" data-de="Trotz unserer Bemühungen gehen Ihre Einstellungen nach dem Update auf die neue Dateistruktur verloren. Wir entschuldigen uns für jegliche Unannehmlichkeiten"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">
+                                    Version 4.1.0
+                                    <object data="src/icons/translation-available.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="note">
+                                    <span data-lang-object-id="changelog.minor-update"></span>, 20/12/2024
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <span class="bold" data-lang-object-id="changelog.new-features"></span>
+                                            <ul>
+                                                <li>
+                                                    <span class="bold" data-lang data-en="Loading screen: " data-de="Ladebildschirm: "></span>
+                                                    <span data-lang data-en="Shows until the DOM and assets are loaded. This ensures best UX" data-de="Bis zum Laden des DOMs und der Assets sichtbar. Dies stellt bestmögliche UX sicher"></span>
+                                                </li>
+                                                <li>
+                                                    <span class="bold" data-lang data-en="Language support: " data-de="Sprachunterstürzung: "></span>
+                                                    <span data-lang data-en="Changes language of the UI. In the changelog, only versions with the globe icon. Current languages: " data-de="Ändert die Sprache der UI. Im Changelog nur Versionen, die mit einem Welt-Icon versehen sind. Aktuelle Sprachen: "></span>
+                                                    <ul>
+                                                        <li data-lang data-en="English" data-de="Englisch"></li>
+                                                        <li data-lang data-en="German" data-de="Deutsch"></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span class="bold" data-lang-object-id="changelog.new-settings"></span>
+                                                    <ul>
+                                                        <li data-lang data-en="Gray accent color" data-de="Graue Akzentfarbe"></li>
+                                                        <li data-lang data-en="Language selector" data-de="Sprachenwähler"></li>
+                                                        <li data-lang data-en="Show errors as message" data-de="Fehler als Benachrichtigung anzeigen"></li>
+                                                        <li data-lang data-en="Skipping asset loading (not recommended)" data-de="Asset-Laden überspringen (nicht empfohlen)"></li>
+                                                        <li data-lang data-en="Darkmode (in addition to navigation bar toggle)" data-de="Darkmode (zusätzlich zum Navigationsleistenschalter)"></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span data-lang data-en="Rise Of Coffee logo as favicon" data-de="Rise of Coffee Logo als Favicon"></span>
+                                                </li>
+                                                <li>
+                                                    SUPER SECRET FLOPPA KEYBIND!!!111!11!
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="bold" data-lang data-en="New font: " data-de="Neue Schriftart: "></span>
+                                            <span data-lang data-en="This page now uses Roboto, which is available on all platforms (.woff2 files included in website folders)" data-de="Diese Seite nutz nun Roboto, was auf allen Platformen verfügbar ist (.woff2 Dateien in den Website-Ordnern enthalten)"></span>
+                                        </li>
+                                        <li>
+                                            <span class="bold" data-lang data-en="New file structure: " data-de="Neue Dateienstruktur: "></span>
+                                            <span data-lang data-en="The internal file structure has been changed, allowing for a much cleaner workspace" data-de="Die interne Dateistruktur wurde geändert, um eine übersichtlichere Entwicklung zu ermöglichen"></span>
+                                        </li>
+                                        <li>
+                                            <span class="bold" data-lang data-en="Bug fixes & optimisation: " data-de="Fehlerbehebungen & Optimierung: "></span>
+                                            <span data-lang data-en="Through a partial rewrite of the code, it was optimised and some bugs were fixed" data-de="Durch ein teilweises Neuschreiben des Codes wurde dieser optimiert und Fehler wurden behoben"></span>
+                                        </li>
+                                        <li>
+                                            <span class="bold" data-lang-object-id="changelog.general-info"></span>
+                                            <span data-lang data-en="Unfortunately, the darkmode transition only works correctly in firefox-based browsers due to differences in the rendering engine. We apologize for any inconvenience" data-de="Die Darkmode-Animation funktioniert bedauerlicherweise nur in Firefox-basierten Browsern aufgrund der Verschiedenheiten der Rendering-Engines richtig. Wir entschuldigen uns für jegliche Unannehmlichkeiten"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr></hr>
+                            <div class="change">
+                                <div class="title">
+                                    Version 4.0.2
+                                    <object data="src/icons/translation-available.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="note">
+                                    Patch, 07/10/2024
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <span class="bold" data-lang data-en="Bug fix: " data-de="Fehlerbehebung: "></span>
+                                            <span data-lang data-en="Fixed a bug where invalid files could be uploaded" data-de="Ein Fehler wurde behoben, der es erlaubte, invalide Dateien hochzuladen"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">
+                                    Version 4.0.1
+                                    <object data="src/icons/translation-available.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="note">
+                                    Patch, 05/10/2024
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <span class="bold" data-lang-object-id="changelog.changes"></span>
+                                            <ul>
+                                                <li data-lang data-en="Messages are now stackable" data-de="Benachrichtungen sind nun stapelbar"></li>
+                                                <li data-lang data-en="Improvements & optimisation" data-de="Verbesserungen & Optimierung"></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">
+                                    Version 4.0.0
+                                    <object data="src/icons/translation-available.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="note">
+                                    <span data-lang-object-id="changelog.major-update"></span>, 30/09/2024
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <span class="bold" data-lang data-en="Complete code rewrite: " data-de="Komplettes Neuschreiben des Quellcodes: "></span>
+                                            <span data-lang data-en="Rewrote the entire source code from scratch, making it much easier to maintain and extend" data-de="Der gesamte Quellcode wurde von Grund auf neu geschrieben, was es deutlich einfacher macht, diesen instand zu halten und zu erweitern"></span>
+                                        </li>
+                                        <li>
+                                            <span class="bold" data-lang-object-id="changelog.new-features"></span>
+                                            <ul>
+                                                <li data-lang data-en="Update popups for the license text and the page's HTML" data-de="Aktualisierungspopups für den Lizenztext und das HTML der Seite"></li>
+                                                <li>
+                                                    <span data-lang data-en="New settings options:" data-de="Neue Einstellungsmöglichkeiten:"></span>
+                                                    <ul>
+                                                        <li data-lang data-en="Settings description toggle" data-de="Einstellungsbeschreibungen Schalter"></li>
+                                                        <li data-lang data-en="Accent color picker" data-de="Aktzentfarbenwähler"></li>
+                                                        <li data-lang data-en="Rounded buttons toggle" data-de="Runde Knöpfe Schalter"></li>
+                                                        <li data-lang data-en="Rounded switches toggle" data-de="Runde Schalter Schalter"></li>
+                                                        <li data-lang data-en="Shadow design toggle" data-de="Schattendesign Schalter"></li>
+                                                        <li data-lang data-en="HTML update popup toggle" data-de="HTML-Aktualisierungspopup Schalter"></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="bold" data-lang data-en="Upgraded features:" data-de="Verbesserte Funktionen:"></span>
+                                            <ul>
+                                                <li data-lang data-en="Redesigned UI" data-de="Neudesignte UI"></li>
+                                                <li data-lang data-en="Message/error display box" data-de="Benachrichtigungs/Error-Anzeigebox"></li>
+                                                <li data-lang data-en="Reduced motion mode" data-de="Redutierter Bewegungsmodus"></li>
+                                                <li data-lang data-en="Simplified page mode" data-de="Vereinfachter Seitenmodus"></li>
+                                                <li data-lang data-en="Changelog from HTML version 3.0.0 and onwards" data-de="Changelog ab HTML-Version 3.0.0 und aufwärts"></li>
+                                                <li data-lang data-en="Settings" data-de="Einstellungen"></li>
+                                                <li data-lang data-en="Footer" data-de="Fuß"></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="bold" data-lang data-en="Bug fixes & improvements: " data-de="Fehlerbehebungen & Verbesserungen: "></span>
+                                            <span data-lang data-en="Various bug fixes and quality of life improvements" data-de="Verschiedenste Fehlerbehebungen und Verbesserungen"></span>
+                                        </li>
+                                        <li>
+                                            <span class="bold" data-lang-object-id="changelog.note"></span>
+                                            <span data-lang data-en="Due to a new localStorage naming system, all settings are reset when opening the page after the update. Older settings files will remain backwards compatibile. We apologize for any inconvenience" data-de="Wegen eines neuen localStorage-Bennungssystems gehen alle Einstellungen beim ersten Öffnen der Seite nach dem Update verloren. Ältere Einstellungsdateien bleiben abwärtskompatibel. Wir entschuldigen uns für jegliche Unannehmlichkeiten"></span>
+                                        </li>
+                                        <li>
+                                            <span class="bold" data-lang data-en="End of maintenance: " data-de="Ende der Wartung: "></span>
+                                            <span data-lang data-en="With this update, maintenance period ends" data-de="Mit diesem Update endet die Wartungsphase"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">
+                                    Version 3.3.0
+                                    <object data="src/icons/translation-unavailable.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="note">
+                                    Minor update, 02/09/2024
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <span class="bold">New features:</span>
+                                            <ul>
+                                                <li>Message display box</li>
+                                                <li>Additional hover effects</li>
+                                                <li>
+                                                    Additional setting:
+                                                    <ul>
+                                                        <li>Settings file name format options</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">
+                                    Version 3.2.0
+                                    <object data="src/icons/translation-unavailable.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="note">
+                                    Minor update, 23/08/2024
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <span class="bold">New features:</span>
+                                            <ul>
+                                                <li>Error display box</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="bold">Upgraded features:</span>
+                                            <ul>
+                                                <li>Update popup</li>
+                                                <li>Popup buttons</li>
+                                                <li>Reduce motion setting</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="bold">Bug fixes and improvements</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">
+                                    Version 3.1.0
+                                    <object data="src/icons/translation-unavailable.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="note">
+                                    Minor update, 23/08/2024
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <span class="bold">New features:</span>
+                                            <ul>
+                                                <li>
+                                                    Additional setting:
+                                                    <ul>
+                                                        <li>Update popup toggle</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="bold">Upgraded features:</span>
+                                            <ul>
+                                                <li>Settings file name now includes the date and time of its generation</li>
+                                                <li>Update popup</li>
+                                                <li>Popup buttons</li>
+                                                <li>Footer</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="bold">General Info: </span>Thanks to Rise Of Coffee Version 0.0.031.1, your settings are now kept even when Rise Of Coffee updates
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">
+                                    Version 3.0.0
+                                    <object data="src/icons/translation-unavailable.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="note">
+                                    Major update, 30/07/2024
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <span class="bold">New features:</span>
+                                            <ul>
+                                                <li>
+                                                    Settings. Current settings options:
+                                                    <ul>
+                                                        <li>Reduce motion (beta)</li>
+                                                        <li>Simplified page mode</li>
+                                                        <li>Keybinds</li>
+                                                        <li>Navigation bar button visibility toggle</li>
+                                                        <li>Importing/exporting settings .json file</li>
+                                                        <li>Clear settings</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Update popup</li>
+                                            </ul>    
+                                        </li>
+                                        <li>
+                                            <span class="bold">Upgraded features:</span>
+                                            <ul>
+                                                <li>Navigation bar buttons</li>
+                                                <li>Optimised javascript</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="bold">Other changes:</span>
+                                            <ul>
+                                                <li>Split the changelog into changes to HTML and changes to the license text</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="bold">Improvements: </span>Various quality of life improvements
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="segment" data-html-segment="2">
+                            <hr>
+                            <div class="change">
+                                <div class="title">
+                                    Version 2.5.5
+                                    <object data="src/icons/translation-unavailable.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="note">
+                                    Patch, 18/07/2024
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <span class="bold">Changes: </span>
+                                            <ul>
+                                                <li>Prepared a system in JavaScript that will only show/hide 10 notes in the changelog at a time</li>
+                                                <li>Changed the way update type and release date are shown</li>
+                                                <li class="crossedOut">The update number will now be shown besides the version number</li>
+                                            </ul>
+                                        </li>
+                                        <li class="crossedOut">
+                                            <span class="bold">General Info: </span>
+                                            Your darkmode preference is unfortunately lost when Rise Of Coffee updates. We apologize for any inconvenience
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">
+                                    Version 2.5.4
+                                    <object data="src/icons/translation-unavailable.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="note">
+                                    Patch, 15/07/2024
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <span class="bold">Changes: </span>
+                                            <ul>
+                                                <li>Your darkmode preference will now be saved using localStorage. This may not work on every device</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">
+                                    General Info
+                                    <object data="src/icons/translation-unavailable.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="note">
+                                    14/07/2024
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            From now on, hot fixes might be released. These only change small things like minor bugs or typos and are therefore not mentioned in the changelog, as it wouldn't be worth listing their changes. However, this can be seen in the footer, where there will be a letter added to the current version. For example: Version 1.0.0 &rarr; Version 1.0.0 a <br> In addition, the HTML update popup will show if enabled in settings
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">
+                                    Version 2.5.3
+                                    <object data="src/icons/translation-unavailable.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="note">
+                                    Patch, 14/07/2024
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <span class="bold">Changes: </span>
+                                            <ul>
+                                                <li class="crossedOut">Names of features in the changelog will now be displayed as italic</li>
+                                                <li>Partially rephrased the changelog</li>
+                                                <li>Minor other improvements</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">
+                                    Version 2.5.2
+                                    <object data="src/icons/translation-unavailable.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="note">
+                                    Patch, 14/07/2024
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <span class="bold">Changes: </span>
+                                            <ul>
+                                                <li>Added a transition for toggling the changelog type</li>
+                                                <li>The current version will be shown in the footer</li>
+                                                <li>Minor improvements</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">
+                                    Version 2.5.1
+                                    <object data="src/icons/translation-unavailable.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="note">
+                                    Patch, 13/07/2024
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li class="bold">Changes: </li>
+                                        <ul>
+                                            <li>Added a hide holder versions button to the changelog</li>
+                                            <li>Renamed changelog buttons</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">
+                                    Version 2.5.0
+                                    <object data="src/icons/translation-unavailable.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="note">
+                                    Minor update, 09/07/2024
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li class="bold">New features: </li>
+                                        <ul>
+                                            <li>View all button for changelog</li>
+                                            <li>Release date for updates</li>
+                                        </ul>
+                                        <li class="bold">Bug fixes & improvements</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">Version 2.4.1</div>
+                                <div class="note">Patch</div>
+                                <div class="content">
+                                    <ul>
+                                        <li class="crossedOut">Added a beta tag to the toggle full screen button, as there are still some bugs on mobile devices. This tag will remain until further notice</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">Version 2.4.0</div>
+                                <div class="note">Minor update</div>
+                                <div class="content">
+                                    <ul>
+                                        <li>Added a toggle full screen button</li>
+                                        <li>Minor quality of life improvements</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="segment" data-html-segment="3">
+                            <hr>
+                            <div class="change">
+                                <div class="title">Version 2.3.2</div>
+                                <div class="note">Patch</div>
+                                <div class="content">
+                                    <ul>
+                                        <li>Removed multiple typos in the changelog</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">General Info</div>
+                                <div class="content">
+                                    <ul>
+                                        <li>From Rise of Coffee version 0.0.029.4 and onwards, this page will automatically update on opening, ensuring it's always up to date</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">Version 2.3.1</div>
+                                <div class="note">Patch</div>
+                                <div class="content">
+                                    <ul>
+                                        <li class="crossedOut">Removed an unnecessary javascript calculation algorithm added in version 2.3.0 to improve performance and simplify the page</li>
+                                        <li>Improved phrasing of the changelog. This change also applies to previous versions</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">Version 2.3.0</div>
+                                <div class="note">Minor update</div>
+                                <div class="content">
+                                    <ul>
+                                        <li>Added a close page button, which allows you to get back to the game much quicker</li>
+                                        <li>Fixed the navigation bar in place. The margin automatically adapts to the device's screen height when loading the page</li>
+                                        <li>Minor quality of life improvements to HTML</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">Version 2.2.1</div>
+                                <div class="note">Patch</div>
+                                <div class="content">
+                                    <ul>
+                                        <li>Changed the way updates are named and numbered. These changes also apply to previous versions</li>
+                                        <li>Rewrote the javascript code handling dark mode, allowing for a cleaner appearance, more efficiency and much easier maintenance</li>
+                                        <li>Removed the ability to scroll on the main page while the popup is visible</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">Version 2.2.0</div>
+                                <div class="note">Minor update</div>
+                                <div class="content">
+                                    <ul>
+                                        <li>Added an effect when hovering over the buttons</li>
+                                        <li>Minor quality of Life improvements to HTML and visuals</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">Version 2.1.0</div>
+                                <div class="note">Minor update</div>
+                                <div class="content">
+                                    <ul>
+                                        <li>Added categories for updates: Major update, minor update and patch. These changes also apply to previous versions</li>
+                                        <li>Fixed a bug where the buttons wouldn't work correctly on mobile devices</li>
+                                        <li>Minor visual enhancements</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">Version 2.0.0</div>
+                                <div class="note">Major update</div>
+                                <div class="content">
+                                    <ul>
+                                        <li>Added navigation bar</li>
+                                        <li>Added dark mode option</li>
+                                        <li>Added changelog popup</li>
+                                        <li>Added footer</li>
+                                        <li>Removed HTML comment</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">Version 1.0.2</div>
+                                <div class="note">Patch</div>
+                                <div class="content">
+                                    <ul>
+                                        <li>Minor quality of life improvements to HTML</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">Version 1.0.1</div>
+                                <div class="note">Patch</div>
+                                <div class="content">
+                                    <ul>
+                                        <li>Minor quality of life improvements to HTML</li>
+                                        <li>Note: This update is released alongside license text version 2</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="segment" data-html-segment="4">
+                            <hr>
+                            <div class="change">
+                                <div class="title">Version 1.0.0</div>
+                                <div class="note">Major update</div>
+                                <div class="content">
+                                    <ul>
+                                        <li>Created page</li>
+                                        <li>Note: This update is released alongside license text version 1</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="viewMore roundableButton rounded active" id="viewMorehtmlSegmentButton" data-lang data-en="View more" data-de="Mehr anzeigen"></div>
+                            <div class="viewLess roundableButton rounded" id="viewLesshtmlSegmentButton" data-lang data-en="View less" data-de="Weniger anzeigen"></div>
+                        </div>
+                    </div>
+                    <div class="changes" id="licenseTextChange">
+                        <div class="segment active" id="licenseSegmentA">
+                            <div class="change">
+                                <div class="title">
+                                    Version 3.1
+                                    <object data="src/icons/translation-available.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="note">
+                                    <span data-lang data-en="Minor update" data-de="Kleines Update"></span>, 16/09/2024
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li data-lang data-en="Changes to Limitation of Liability section" data-de="Änderung des Limitation of Liability Abschnitts"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">
+                                    Version 3.0
+                                    <object data="src/icons/translation-available.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="note">
+                                    <span data-lang data-en="Major update" data-de="Großes Update"></span>, 30/07/2024
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li data-lang data-en="Fully revised Rise Of Coffee license text" data-de="Komplette Überarbeitung des Rise Of Coffee Lizenztexts"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">
+                                    Version 2.0
+                                    <object data="src/icons/translation-available.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="note">
+                                    <span data-lang data-en="Major update" data-de="Großes Update"></span>, 01/07/2024
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li data-lang data-en="Added Godot license text" data-de="Godot Lizenztext hinzugefügt"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="change">
+                                <div class="title">
+                                    Version 1.0
+                                    <object data="src/icons/translation-available.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="note">
+                                    <span data-lang data-en="Major update" data-de="Großes Update"></span>, 30/06/2024
+                                </div>
+                                <div class="content">
+                                    <ul>
+                                        <li data-lang data-en="Added Rise Of Coffee license text" data-de="Rise Of Coffee Lizenztext hinzugefügt"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup settings" id="settingsPopup">
+                <div class="header">
+                    <div class="title" data-lang data-en="Settings" data-de="Einstellungen"></div>
+                    <div class="closeButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                            <line x1="2" y1="2" x2="30" y2="30" stroke-width="4" stroke-linecap="round"/>
+                            <line x1="30" y1="2" x2="2" y2="30" stroke-width="4" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="group accessibility">
+                        <div class="title top" data-lang data-en="Accessibility" data-de="Barrierefreiheit"></div>
+                        <div class="setting">
+                            <div class="text">
+                                <div class="name" data-lang data-en="Reduced motion mode" data-de="Reduzierter Bewegungsmodus"></div>
+                                <div class="desc" data-lang data-en="Removes all transitions" data-de="Entfernt alle Übergänge"></div>
+                            </div>
+                            <div class="switch reducedMotionMode rounded">
+                                <span class="element off active">Off</span>
+                                <span class="element on">On</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="setting">
+                            <div class="text">
+                                <div class="name" data-lang data-en="Setting descriptions" data-de="Einstellungsbeschreibungen"></div>
+                                <div class="desc" data-lang data-en="Toggles settings descriptions like this one" data-de="Schaltet die Einstellungsbeschreibungen wie diese um"></div>
+                            </div>
+                            <div class="switch settingDescriptions rounded">
+                                <span class="element off">Off</span>
+                                <span class="element on active">On</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="setting">
+                            <div class="text">
+                                <div class="name" data-lang data-en="Simplified page mode" data-de="Vereinfachter Seitenmodus"></div>
+                                <div class="desc" data-lang data-en="Hides everything besides the license text" data-de="Versteckt alles außer dem Lizenztext"></div>
+                            </div>
+                            <div class="switch simplifiedPageMode rounded">
+                                <span class="element off active">Off</span>
+                                <span class="element on">On</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group appearance">
+                        <div class="title" data-lang data-en="Appearance" data-de="Aussehen"></div>
+                        <div class="setting">
+                            <div class="text">
+                                <div class="name" data-lang data-en="Accent color" data-de="Aktzentfarbe"></div>
+                                <div class="desc" data-lang data-en="Choose color for certain elements and effects" data-de="Farbe für bestimmte Elemente und Effekte auswählen"></div>
+                            </div>
+                            <div class="colorPicker rounded">
+                                <div class="element red">
+                                    <object data="src/icons/tick-icon.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="element orange">
+                                    <object data="src/icons/tick-icon.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="element green">
+                                    <object data="src/icons/tick-icon.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="element blue selected">
+                                    <object data="src/icons/tick-icon.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="element purple">
+                                    <object data="src/icons/tick-icon.svg" type="image/svg+xml"></object>
+                                </div>
+                                <div class="element gray">
+                                    <object data="src/icons/tick-icon.svg" type="image/svg+xml"></object>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="setting">
+                            <div class="text">
+                                <div class="name">Darkmode</div>
+                                <div class="desc" data-lang data-en="Toggles darkmode" data-de="Schaltet den Darkmode um"></div>
+                            </div>
+                            <div class="switch dark rounded">
+                                <span class="element off active">Off</span>
+                                <span class="element on">On</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="setting dropdown">
+                            <div class="text">
+                                <div class="name" data-lang data-en="Font" data-de="Schriftart"></div>
+                                <div class="desc" data-lang data-en="Choose a font. Note: Fonts with warning icon may affect the layout of certain elements" data-de="Schriftart auswählen. Hinweis: Schriftarten mit Warnungs-Icon beeinträchtigen eventuell das Layout bestimmter Elemente"></div>
+                            </div>
+                            <div class="dropdown" id="fontDropdown">
+                                <div class="select roundableButton rounded">
+                                    <span class="text" id="fontDropdownSelect">Roboto</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                        <line x1="8" y1="12" x2="16" y2="20" stroke-width="3" stroke-linecap="round"/>
+                                        <line x1="24" y1="12" x2="16" y2="20" stroke-width="3" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <ul class="options roundableButton rounded">
+                                    <li>
+                                        <object data="src/icons/font-warning.svg" type="image/svg+xml"></object>
+                                        <span class="poppins">Poppins</span>
+                                    </li>
+                                    <li>
+                                        <span class="roboto">Roboto</span>
+                                    </li>
+                                    <li>
+                                        <span class="oswald">Oswald</span>
+                                    </li>
+                                    <li>
+                                        <span class="robotoslab">Roboto Slab</span>
+                                    </li>
+                                    <li class="last">
+                                        <span class="lora">Lora</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="setting">
+                            <div class="text">
+                                <div class="name" data-lang data-en="Rounded buttons" data-de="Runde Knöpfe"></div>
+                                <div class="desc" data-lang data-en="Toggles roundness of all buttons" data-de="Schaltet das Runden aller Knöpfe um"></div>
+                            </div>
+                            <div class="switch roundedButtons rounded">
+                                <span class="element off">Off</span>
+                                <span class="element on active">On</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="setting">
+                            <div class="text">
+                                <div class="name" data-lang data-en="Rounded Off/On switches" data-de="Runde Aus/An Schalter"></div>
+                                <div class="desc" data-lang data-en="Toggles roundness of Off/On switches (includes accent color picker)" data-de="Schaltet das Runden der Aus/An Schalter (inkludiert Aktzentfarbenwähler) um"></div>
+                            </div>
+                            <div class="switch roundedSwitches rounded">
+                                <span class="element off">Off</span>
+                                <span class="element on active">On</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="setting">
+                            <div class="text">
+                                <div class="name" data-lang data-en="Shadow design" data-de="Schattendesign"></div>
+                                <div class="desc" data-lang data-en="Toggles all shadows on the page" data-de="Schaltet alle Schatten auf der Seite um"></div>
+                            </div>
+                            <div class="switch shadowDesign rounded">
+                                <span class="element off">Off</span>
+                                <span class="element on active">On</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group controls">
+                        <div class="title" data-lang data-en="Controls" data-de="Eingabe"></div>
+                        <div class="setting">
+                            <div class="text">
+                                <div class="name">Keybinds</div>
+                                <div class="desc" data-lang data-en="Toggles Keybinds: 'f' for full screen, 'esc' to close popups/page" data-de="Schaltet Keybinds um: 'f' für Vollbildschirm, 'esc' um Popups/Seite zu schließen"></div>
+                            </div>
+                            <div class="switch keybinds rounded">
+                                <span class="element off active">Off</span>
+                                <span class="element on">On</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group dataManagement">
+                        <div class="title" data-lang data-en="Data management" data-de="Datenmanagement"></div>
+                        <div class="setting dropdown">
+                            <div class="text">
+                                <div class="name" data-lang data-en="Date format" data-de="Datumsformat"></div>
+                                <div class="desc" data-lang data-en="Choose a date format for the name of the generated file" data-de="Ein Datumsformat für den namen der generierten Datei auswählen"></div>
+                            </div>
+                            <div class="dropdown" id="dateFormatDropdown">
+                                <div class="select roundableButton rounded">
+                                    <span class="text" id="dateFormatDropdownSelect">DD.MM.YYYY - HH.MM</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                        <line x1="8" y1="12" x2="16" y2="20" stroke-width="3" stroke-linecap="round"/>
+                                        <line x1="24" y1="12" x2="16" y2="20" stroke-width="3" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <ul class="options roundableButton rounded">
+                                    <li class="a">None</li>
+                                    <li class="b">DD.MM.YYYY</li>
+                                    <li class="c">DD.MM.YYYY - HH.MM</li>
+                                    <li class="d last">DD.MM.YYYY - HH.MM.SS</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <input type="file" accept=".json" id="settingsFileInput">
+                            <label for="settingsFileInput" class="button roundableButton rounded import" data-lang data-en="Import settings file" data-de="Einstellungsdatei importieren"></label>
+                            <div class="button roundableButton rounded export" data-lang data-en="Export settings file" data-de="Einstellungsdatei exportieren"></div>
+                        </div>
+                        <div class="button roundableButton rounded reset" data-lang data-en="Return to default settings" data-de="Zu Werkseinstellung zurückkehren"></div>
+                    </div>
+                    <div class="group language">
+                        <div class="title" data-lang data-en="Language" data-de="Sprache"></div>
+                        <div class="setting dropdown">
+                            <div class="text">
+                                <div class="desc noName" data-lang data-en="Choose a language for the UI. The license text will remain in English" data-de="Sprache für die UI auswählen. Der Lizenztext verbleibt auf Englisch"></div>
+                            </div>
+                            <div class="dropdown" id="languageDropdown">
+                                <div class="select roundableButton rounded">
+                                    <span class="text" id="languageDropdownSelect">
+                                        <object data="src/icons/flag-us.svg" type="image/svg+xml"></object>
+                                        English
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                        <line x1="8" y1="12" x2="16" y2="20" stroke-width="3" stroke-linecap="round"/>
+                                        <line x1="24" y1="12" x2="16" y2="20" stroke-width="3" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <ul class="options roundableButton rounded">
+                                    <li class="en">
+                                        <object data="src/icons/flag-us.svg" type="image/svg+xml"></object>
+                                        English
+                                    </li>
+                                    <li class="de last">
+                                        <object data="src/icons/flag-de.svg" type="image/svg+xml"></object>
+                                        Deutsch
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group navBarButtons">
+                        <div class="title" data-lang data-en="Navigation bar buttons" data-de="Navigationsleistenknöpfe"></div>
+                        <div class="desc" data-lang data-en="Toggle the visibility of the navigation bar buttons" data-de="Sichtbarkeit der Navigationsleistenknöpfe umschalten"></div>
+                        <div class="setting">
+                            <div class="text">
+                                <div class="name" data-lang data-en="Darkmode toggle" data-de="Darkmode Schalter"></div>
+                            </div>
+                            <div class="switch darkmodeButton rounded navBarButtonVisibility">
+                                <div class="element off">Off</div>
+                                <div class="element on active">On</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="setting">
+                            <div class="text">
+                                <div class="name" data-lang data-en="Full screen toggle" data-de="Vollbildschirm Schalter"></div>
+                            </div>
+                            <div class="switch fullscreenButton rounded navBarButtonVisibility">
+                                <div class="element off">Off</div>
+                                <div class="element on active">On</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="setting">
+                            <div class="text">
+                                <div class="name" data-lang data-en="Changelog toggle" data-de="Changelog Schalter"></div>
+                            </div>
+                            <div class="switch changelogButton rounded navBarButtonVisibility">
+                                <div class="element off">Off</div>
+                                <div class="element on active">On</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="setting">
+                            <div class="text">
+                                <div class="name" data-lang data-en="Close page" data-de="Seite schließen"></div>
+                            </div>
+                            <div class="switch closePageButton rounded navBarButtonVisibility">
+                                <div class="element off">Off</div>
+                                <div class="element on active">On</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group otherFeatures">
+                        <div class="title" data-lang data-en="Other features" data-de="Weitere Funktionen"></div>
+                        <div class="setting">
+                            <div class="text">
+                                <div class="name" data-lang data-en="Scroll indicator" data-de="Scrollanzeige"></div>
+                                <div class="desc" data-lang data-en="Toggles a scroll indicator in the bottom right corner showing how much has been scrolled on the page" data-de="Schaltet eine Fortschritsanzeige in der rechten unteren Ecke um, die zeigt, wie viel auf der Seite gescrollt wurde"></div>
+                            </div>
+                            <div class="switch scrollIndicator rounded">
+                                <span class="element off">Off</span>
+                                <span class="element on active">On</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="group updatePopups">
+                        <div class="title" data-lang data-en="Update popups" data-de="Aktualisierungspopups"></div>
+                        <div class="setting">
+                            <div class="text">
+                                <div class="name" data-lang data-en="License text" data-de="Lizenztext"></div>
+                                <div class="desc" data-lang data-en="Shows update popup when the license text is updated" data-de="Zeigt ein Aktualisierungspopup, wenn der Lizentext aktualisiert wurde"></div>
+                            </div>
+                            <div class="switch licenseUpdatePopup rounded">
+                                <div class="element off">Off</div>
+                                <div class="element on active">On</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="setting">
+                            <div class="text">
+                                <div class="name">HTML</div>
+                                <div class="desc" data-lang data-en="Shows update popup when the page's HTML is updated" data-de="Zeigt ein Aktualisierungspopup, wenn das HTML der Seite aktualisiert wurde"></div>
+                            </div>
+                            <div class="switch htmlUpdatePopup rounded">
+                                <div class="element off">Off</div>
+                                <div class="element on active">On</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group developmentTools">
+                        <div class="title" data-lang data-en="Development tools" data-de="Entwicklungswerkzeuge"></div>
+                        <div class="desc" data-lang data-en="This is primarily intended for the site's development, but still available for interested users" data-de="Diese sind vorallem für die Entwicklung der Seite gedacht, jedoch auch für interessierte Nutzer verfügbar"></div>
+                        <div class="setting">
+                            <div class="text">
+                                <div class="name" data-lang data-en="Show errors as message" data-de="Fehler als Benachrichtung anzeigen"></div>
+                                <div class="desc" data-lang data-en="Shows text that would usually be logged into the console as messages" data-de="Zeigt Text, die normalerweise in die Konsole geschrieben werden würden, als Benachrichtigung an"></div>
+                            </div>
+                            <div class="switch showErrorAsMessage rounded">
+                                <div class="element off active">Off</div>
+                                <div class="element on">On</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="setting">
+                            <div class="text">
+                                <div class="name" data-lang data-en="Skip asset loading (not recommended!)" data-de="Laden der assets überspringen (nicht empfohlen!)"></div>
+                                <div class="desc" data-lang data-en="Skips the assets loading part of the loading screen. For best UX, this is not recommended" data-de="Überspringt das asset-Laden des Ladebildschirms. Für eine bessere UX ist dies nicht empfohlen"></div>
+                            </div>
+                            <div class="switch skipAssetLoading rounded">
+                                <div class="element off active">Off</div>
+                                <div class="element on">On</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="licenseContainer" id="licenseContainer"></div>
+            <div class="scrollIndicator active" id="scrollIndicator">
+                <div class="bar"></div>
+                <div class="text">0%</div>
+            </div>
+            <div class="overlay" id="overlay"></div>
+        </main>
+        <footer class="footer" id="footer">
+            <div class="goToTopButton roundableButton rounded">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <line x1="16" y1="28" x2="16" y2="4" stroke-width="3" stroke-linecap="round"/>
+                    <line x1="8" y1="12" x2="16" y2="4" stroke-width="3" stroke-linecap="round"/>
+                    <line x1="24" y1="12" x2="16" y2="4" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+                Go to top
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <line x1="16" y1="28" x2="16" y2="4" stroke-width="3" stroke-linecap="round"/>
+                    <line x1="8" y1="12" x2="16" y2="4" stroke-width="3" stroke-linecap="round"/>
+                    <line x1="24" y1="12" x2="16" y2="4" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <span data-lang data-en="Current license text version: " data-de="Aktuelle Lizenztextversion: "></span><span class="currentLicense"></span>; <span data-lang data-en="Current HTML version: " data-de="Aktuelle HTML-Version: "></span><span class="currenthtml"></span>
+        </footer>
+    </body>
+</html>
